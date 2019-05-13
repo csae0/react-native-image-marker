@@ -343,7 +343,7 @@ public class ImageMarkerManager extends ReactContextBaseJavaModule {
                 y += textPaint.descent() - textPaint.ascent();
             }*/
 
-            canvas.save(Canvas.ALL_SAVE_FLAG);
+            canvas.save();
             canvas.restore();
 
             String resultFile = generateCacheFilePathForMarker(imgSavePath, fileName, saveLocation);
@@ -495,7 +495,7 @@ public class ImageMarkerManager extends ReactContextBaseJavaModule {
 
 
             // 保存
-            canvas.save(Canvas.ALL_SAVE_FLAG);
+            canvas.save();
             // 存储
             canvas.restore();
             String resultFile = generateCacheFilePathForMarker(imgSavePath, fileName, saveLocation);
@@ -651,7 +651,7 @@ public class ImageMarkerManager extends ReactContextBaseJavaModule {
 
 
             // 保存
-            canvas.save(Canvas.ALL_SAVE_FLAG);
+            canvas.save();
             // 存储
             canvas.restore();
 
